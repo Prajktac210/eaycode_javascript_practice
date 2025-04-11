@@ -1,0 +1,2 @@
+ternary operatore
+condition? true:false;

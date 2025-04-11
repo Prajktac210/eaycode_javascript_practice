@@ -1,0 +1,19 @@
+today we are learn about console
+
+1] console.log()  : - use to log the output 
+  eg: console.log("log the output")
+
+2] console.info() :- print info on the console
+  eg : console.info("print info on the console")
+
+3] console.warn() :- print warning on the console
+  eg : console.warn("print warning on the console")
+
+4] console.error() :- print error on the console
+  eg : console.error("print error on the console")
+
+5] console.clear() :- clear the console
+  eg : console.clear()
+
+
+

@@ -1,0 +1,7 @@
+ARITHEMATIC OPERATORS /MATHEMATICAL OPERATORS
++ addition
+- substraction
+/ division
+* multiplication
+% MODULUS
+

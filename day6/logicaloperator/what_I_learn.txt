@@ -1,0 +1,17 @@
+logical and &&
+both values are true then TRUE
+ F T =F
+T F=F
+T T=T
+F F =F
+
+logical or ||
+if one value is true then true
+ F T =T
+T F=T
+T T=T
+F F =F
+
+LOGICAL NOT
+ true la false
+false la true

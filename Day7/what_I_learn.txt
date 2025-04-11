@@ -1,0 +1,9 @@
+console.log(document)=display hole page of html
+
+document.write("add a random text")=add a text in html page
+document.title="learn document keyword"=add new title
+*add a text in html page
+let newheading="<p>using p tag add a paragraph in body</p>"
+document.writeln(newheading)
+document.URL=display url of page
+document.body=disply body content

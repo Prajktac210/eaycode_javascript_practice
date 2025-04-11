@@ -1,0 +1,32 @@
+data has mainly two types
+
+1] Primitive Data
+    1]. Number 
+      eg : 12 ,1 ,2 ,3 
+    
+    2]. String = colllection of chars
+      eg : "javascript"
+
+    3] Boolean 
+      eg : true , false 
+    
+    4] Null
+       let a =Null
+
+    5] undefined
+      let a 
+
+
+2] Non-Primitive Data
+     1] Object 
+      eg : {}
+
+    2] Array
+
+     eg : []
+
+    3] Functions
+     
+     eg : ()
+
+typeof attribute is used for find out type data

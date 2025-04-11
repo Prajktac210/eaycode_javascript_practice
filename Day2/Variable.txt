@@ -1,0 +1,15 @@
+RULES OD VARIABLE DECLERATION
+letters and Digit = (a to z) (A to Z) (0 to 9)
+
+speciall Chars = "_" 
+
+no space = " "  //dont add empty space 
+
+// key words = meaningful word in js 
+
+ ex:var ,let ,const 
+
+
+variable must be start with a letters 
+
+please dont use  indentifires
