@@ -1,0 +1,21 @@
+alert("you are hacked !") : 
+  show alert on the webpage !   
+  alert box have ok button  
+  it returns undefine ! 
+
+
+confirm() : 
+
+show the confirm box on the webpage
+ confirm box returs TRUE or FAlSE
+  confirm box have a TWO btns cancle or ok
+  OK = TRUE
+  cancle = FAlSE
+
+
+prompt() :
+  it have a input that takes the input via browser 
+  it also have TWO btn 
+  one is cancle or another ok
+  if i click on cancle it returns null
+  if i click on ok it returns the input value in a string 
