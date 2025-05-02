@@ -1,0 +1,2 @@
+
+switch : switch statement is use to execute different block of code based on value of expression.
