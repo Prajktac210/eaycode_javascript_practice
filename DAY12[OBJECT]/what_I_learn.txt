@@ -1,0 +1,9 @@
+object is a collection of key value pair
+example:
+     let mydata = {
+    name : "prajkta",
+    age : 21,
+    address :"shirwal"
+}
+console.log(mydata)
+
