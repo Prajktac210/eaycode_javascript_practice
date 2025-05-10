@@ -1,0 +1,19 @@
+for(let i=1;i<=10;i++){
+  console.log("hello")
+}
+
+
+let colors=["red","blue","green","white","black","yellow","pink"]
+
+for (let  i=0;i<=colors.length;i++){
+  console.log(colors[i]);
+}
+
+
+let alpha = ["a", "b", "c", "d", "e", "f"];
+console.log(alpha.length);
+
+for (let i = alpha.length - 1; i >= 0; i--) {
+  console.log(`current alphabet is ${alpha[i]}`);
+}
+
