@@ -1,0 +1,32 @@
+function
+block of code that perform  as specific tak can be invoked(calling the function)whenever needed.
+
+
+function sum(a,b){  //a,b is a parameters
+  console.log("addition of two no",a+b)
+}
+sum(10,20)  // 10,20 is arguments
+
+
+function greet(){
+  return ("hello")   //using return keyword
+}
+let result=greet()
+console.log(result)
+
+
+//function expression
+ let add=function(x,y){
+  console.log(x+y)
+ }
+ add(10,30)
+
+
+ //set default variable
+
+ function greet(username="user"){
+  console.log(`good morning ${username}`)  //using string liternal
+ }
+ greet()
+
+
