@@ -1,0 +1,75 @@
+
+Explanation: A function expression is a way to define a function by assigning it to a variable. Unlike function declarations, function expressions are not hoisted to the top of their scope, meaning you can only call them after they have been defined. The function can be anonymous (without a name) or named.
+Example from your file:
+javascript
+// let greetUser = function(name){
+//      console.log(name)
+// }
+Arrow Functions (ES6)
+
+Explanation: Introduced in ECMAScript 6 (ES6), arrow functions provide a more concise syntax for writing function expressions. They are always anonymous. A key difference from traditional functions is that arrow functions do not have their own this context; they inherit this from the surrounding (lexical) scope. They also don't have their own arguments object.
+Example from your file:
+javascript
+// let sayThankYou = (name) =>{
+//     console.log(`thank you ${name}`)
+// }
+Immediately Invoked Function Expressions (IIFE)
+
+Explanation: An IIFE is a JavaScript function that runs as soon as it is defined. It's created by wrapping an anonymous function in parentheses () and then immediately calling it with another pair of parentheses (). IIFEs are often used to create a local scope for variables, preventing them from polluting the global scope, and to execute setup code.
+Example from your file:
+javascript
+// (function(){
+//     console.log("hii")
+// })()
+Callback Functions
+
+Explanation: A callback function is a function that is passed as an argument to another function. This "outer" function then calls (or "calls back") the passed-in function at a later point in time, often after an asynchronous operation has completed or a specific event has occurred. Callbacks are a fundamental concept for handling asynchronous operations and event-driven programming in JavaScript.
+Example from your file:
+javascript
+// let abc=(xyz)=>{
+//     console.log("hello")
+//     xyz() // xyz is the callback function
+// }
+//
+// abc(()=>{ // This arrow function is passed as the callback
+//     console.log("hii")
+// })
+And another example:
+javascript
+// let greet=(cb)=>{
+//    console.log("hii")
+//    cb() // cb is the callback function
+// }
+//
+// greet(()=>{ // This arrow function is passed as the callback
+//     console.log("greet complete")
+// })
+Higher-Order Functions
+
+Explanation: A higher-order function is a function that does at least one of the following:
+Takes one or more functions as arguments (like the abc and greet functions in your examples, which take callback functions).
+Returns a function as its result.
+Higher-order functions are a core concept in functional programming and allow for more abstract and reusable code.
+Examples from your file:
+Taking a function as an argument (demonstrated by the callback examples above):
+javascript
+// let greet =(cb) =>{ // greet is a higher-order function because it takes 'cb' (a function) as an argument
+//     console.log("hii")
+//     cb()
+// }
+Returning a function:
+javascript
+// function retHelloFunction(){ // retHelloFunction is a higher-order function
+//
+//     return function(){ // It returns this anonymous function
+//         return function(){ // which in turn returns another function
+//              return function(){ // and so on...
+//                 console.log("hello")
+//              }
+//         }
+//     }
+// }
+//
+// let result = retHelloFunction() // result now holds the first returned function
+// console.log(result()) // This would execute the nested functions until console.log("hello") is called
+This example also implicitly demonstrates closures, where inner functions have access to the variables and scope of their outer functions, even after the outer functions have finished executing.
