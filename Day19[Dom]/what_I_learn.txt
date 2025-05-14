@@ -1,0 +1,38 @@
+1. Get a div element by ID:
+   let dom = document.getElementById("box");
+
+2. Log the DOM element to console:
+   console.log(dom);
+
+3. Get the inner text of the div:
+   console.log(dom.innerText);
+
+4. Insert HTML into the div (e.g., a <b> tag):
+   dom.innerHTML = "<b>we can learn dom how to add html</b>";
+
+5. Access and modify the style of the element:
+   console.log(dom.style);
+   dom.style.backgroundColor = "pink"; // Corrected spelling from 'backgroungColor'
+
+6. Get elements by class name (returns an HTMLCollection):
+   let usingclassname = document.getElementsByClassName("paragraph");
+   console.log(usingclassname);
+
+7. Loop through elements and modify content:
+   for (let para of usingclassname) {
+       para.innerHTML = "<h1>hi guys</h1>";
+   }
+
+8. Alternative ways to get elements (commented out in your code):
+
+   // By tag name:
+   // let para = document.getElementsByTagName("p");
+   // console.log(para);
+
+   // By query selector (first match):
+   // let para = document.querySelector("p");
+   // console.log(para);
+
+9. Get all <p> elements using querySelectorAll:
+   let para = document.querySelectorAll("p");
+   console.log(para);
