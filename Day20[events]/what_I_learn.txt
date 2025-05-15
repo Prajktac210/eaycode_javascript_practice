@@ -1,0 +1,62 @@
+What is an Event?
+An event is a signal that something has happened in the browser — like clicking a button, typing in a field, or resizing the window.
+
+🔸 1. click Event
+✅ Definition:
+The click event occurs when an element is clicked once.
+
+✅ Syntax:
+
+element.addEventListener("click", function);
+✅ Example:
+
+<button id="btn1">Click Me</button>
+
+<script>
+  let btn1 = document.querySelector("#btn1");
+
+  btn1.addEventListener("click", function () {
+    console.log("Button was clicked once");
+  });
+</script>
+🔸 2. dblclick Event
+✅ Definition:
+The dblclick event occurs when an element is double-clicked (two quick clicks).
+
+✅ Syntax:
+
+
+element.addEventListener("dblclick", function);
+✅ Example:
+
+<button id="btn2">Double Click Me</button>
+
+<script>
+  let btn2 = document.querySelector("#btn2");
+
+  btn2.addEventListener("dblclick", function () {
+    console.log("Button was double-clicked");
+  });
+</script>
+🧠 Important Points:
+click and dblclick can both be used on the same element.
+
+If both are used, a double-click might also trigger the click event unless handled carefully.
+
+Use anonymous functions or named functions for better code readability.
+
+🧪 Full Example: Both Events
+
+<button id="btn">Click or Double Click</button>
+
+<script>
+  let btn = document.querySelector("#btn");
+
+  btn.addEventListener("click", function () {
+    console.log("Single click");
+  });
+
+  btn.addEventListener("dblclick", function () {
+    console.log("Double click");
+  });
+</script>
